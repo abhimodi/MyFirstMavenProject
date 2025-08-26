@@ -1,0 +1,17 @@
+StepDef\MultiplicationStepDef.class
+com\MyProject\MyFirstMavenProject\ActionsExample.class
+com\MyProject\MyFirstMavenProject\AppTest.class
+StepDef\LoginStepDef1.class
+testNG\SessionHandling.class
+com\MyProject\MyFirstMavenProject\BrokenLinksCheck.class
+Runner\TestRunner.class
+JUnitTests\TestRunner.class
+com\MyProject\MyFirstMavenProject\AlertExample.class
+com\MyProject\MyFirstMavenProject\PG1.class
+com\MyProject\MyFirstMavenProject\PG2.class
+testNG\Flipkart.class
+com\MyProject\MyFirstMavenProject\Demo.class
+com\MyProject\MyFirstMavenProject\WindowHandleExemple.class
+JUnitTests\AssertExamples.class
+testNG\SnapDeal.class
+JUnitTests\TestJunit.class
