@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven3'    // Configure in Jenkins -> Global Tool Configuration
-        jdk 'JDK21'       // Configure in Jenkins -> Global Tool Configuration
+        maven 'Maven3'     // Make sure this name matches Global Tool Configuration
+        jdk 'JDK21'        // Same here
     }
 
     stages {
@@ -16,13 +16,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean install -DskipTests=true'
+                bat 'mvn clean install -DskipTests=true'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
@@ -39,7 +39,7 @@ pipeline {
 
     post {
         always {
-            junit 'target/surefire-reports/*.xml'
+            junit 'target/cucumber-reports/*.xml'
         }
     }
 }
